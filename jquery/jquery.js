@@ -4,11 +4,17 @@
 $(document).ready(function(){
     $("#find-button").click(function(){
         $("#form").toggle(1200);
+        $("#wrapper").css({
+            "background-color": "teal",
+        });
     });
 });
 
 $(document).ready(function(){
     $("#reset-button").click(function(){
         $("#form").toggle(1200);
+        $("#wrapper").css({
+            "background-color": "teal",
+        });
     });
 });

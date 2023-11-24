@@ -7,6 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-style.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
 	<title>Dinara Travel</title>
@@ -19,6 +20,7 @@
     <script src="js/sound.js"></script>
 </head>
 <body>
+  <div class="wrapper" id="wrapper">
 <!-- Верхнее меню для переходов между страницами -->
 	<nav class="menu-area">
 		<ul>
@@ -38,6 +40,24 @@
 </div>
   <header><p class="slogan">Dinara Travel</p></header>
 <!-- форма для подбора туров -->
+
+<div class="container-md" id="container-md">
+  <div class="popup-content">
+    <button class="open-popup" onclick="showPopup(); playAudio();" ><i class="fas fa-play"></i></button>
+    <div class="popup" id="popup">
+      <img src="images/thailand_islands.png" alt="Description of the image" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+      <audio id="myAudio" controls autoplay>
+        <source src="sounds/music.mp3" type="audio/mp3">
+      </audio>
+      <div class="controls">
+        <button onclick="playAudio()"><i class="fas fa-play"></i></button>
+        <button onclick="pauseAudio()" id="pause-button"><i class="fas fa-pause"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/sound.js"></script>
+
  <form id="form">
          <div class="search-div-text"><h1>Please enter the data</h1></div>
   <div class="search" id="search-div">
@@ -155,6 +175,61 @@
   </div>
 </form>
 
+<div class="stats">
+
+<div class="container-lg">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Travel Statistics
+        </div>
+        <div class="panel-body">
+          <canvas id="travelChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  var travelData = {
+    labels: ['January', 'February', 'March', 'April', 'May'],
+    datasets: [{
+      label: 'Number of Travelers',
+      data: [1500, 1200, 1800, 2000, 1600],
+      borderColor: 'rgba(75, 192, 192, 1)',
+      borderWidth: 2,
+      fill: false
+    }]
+  };
+
+  var ctx = document.getElementById('travelChart').getContext('2d');
+
+  var travelChart = new Chart(ctx, {
+    type: 'line',
+    data: travelData,
+    options: {
+      scales: {
+        xAxes: [{
+          gridLines: {
+            display: false
+          }
+        }],
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+  });
+</script>
 
 <!-- Карусель boostrap с красивыми фотографиями которые меняются -->
 <div class="container" id="carousel-div">

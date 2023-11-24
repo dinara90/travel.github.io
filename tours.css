@@ -155,9 +155,6 @@ body {
   background-color: lightgrey;
   border-radius: 10px;
   position: relative;
-  height: 102%;
-  margin-top: 20%;
-  margin-bottom: 15%;
 }
 
 .div-img {
@@ -167,7 +164,6 @@ body {
 
 .div-img img {
   width: 98%;
-  height: 290px;
   margin: 1% auto;
   border-radius: 10px;
 }
@@ -241,9 +237,6 @@ a {
   color: inherit;
 }
 
-#footer-tours {
-  margin-top: 5%;
-}
 
 @media (max-width: 768px) {
   .tours-list {
@@ -254,7 +247,7 @@ a {
     grid-template-columns: 1fr;
     padding: 10px;
   }
-
+  
   .block button {
     width: 40%;
     height: 30px;
@@ -264,5 +257,10 @@ a {
   .div-text {
     font-size: 5px;
   }
+
+  #Sidenav {
+    transform: translateX(-100%);
+  }
+
 
 }

@@ -311,6 +311,80 @@ a:hover {
   text-decoration: none;
 }
 
+
+.container-md {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.open-popup {
+  background-color: #FFD700;
+  color: #0D1B2A;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  overflow: hidden
+}
+
+.open-popup:hover {
+  background-color: #E5AA00; 
+  color: #172A3A;
+}
+
+.popup {
+  display: none;
+  background-color: #172A3A;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.popup audio {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.popup .controls {
+  text-align: center;
+}
+
+.popup .controls button {
+  background-color: #FFD700;
+  color: #0D1B2A; 
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.popup .controls button:hover {
+  background-color: #E5AA00; 
+  color: #172A3A;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.popup .controls button:active {
+  box-shadow: inset 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.stats {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.stats div {
+  width: 100%;
+}
+
 @media (max-width: 1100px) {
   .search {
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
