@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Добавление CDN для работы с bootstrap, favicon, font awesome а также чтобы добавить css и javascript-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Dinara Travel</title>
+	<link rel="stylesheet" type="text/css" href="contact%20us.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/animation.js"></script>
+</head>
+<body>
+<!-- верхнее меню для перехода между страницами-->
+<nav class="menu-area">
+	<ul>
+		<li id="li1"><a title="home" href="#"><span class="side-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></span></a></li>
+		<li><a title="Dinara travel" href="index.html"><img id="img1" src="images/logo.png"></i></a></li>
+		<li><a title="hot tours" href="hot%20tours.html">HOT TOURS</a></li>
+		<li><a title="log in" href="log%20in.html">LOG IN<img src="images/person.png"></a></li>
+	</ul>
+</nav>
+<!-- боковое меню для перехода между страницами с анимацией JS-->
+<div id="Sidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="must%20visit.html">You must visit</a>
+	<a title="tickets" href="tickets.html">Tickets</a>
+	<a href="contact us.html">Contact Us</a>
+</div>
+<!-- блок для информацией, с ипользованием boostrap-->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="jumbotron">
+				<h2>Our contacts</h2>
+				<ul>
+					<li>City: Astana, Kazakhstan</li>
+					<li>Our Address: Kunayeva 33</li>
+					<li>Email address: dinara.travel@mail.ru</li>
+					<li>Phone number: +7(777)0001234</li>
+				</ul>
+				<p>Business centre: Astanalyk</p>
+				<img src="https://cdn.archpaper.com/wp-content/uploads/2019/11/Mitch-Pittman-1.jpeg">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- футер с информацией и социальными сетями-->
+<footer>
+    <div class="footer-text">
+        <ul>
+            <li><img src="images/logo.png" alt="logo"></li>
+            <li>City: Astana, Kazakhstan</li>
+            <li>Our Address: Kunayeva 33</li>
+            <li>Email address: dinara.travel@mail.ru</li>
+            <li>Phone number: +7(777)0001234</li>
+        </ul>
+    </div>
+
+    <!-- использовались font awesome для фото социальных сетей-->
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <a href="#" class="fa fa-yahoo"></a>
+    <a href="#" class="fa fa-reddit"></a>
+    <a href="#" class="fa fa-rss"></a>
+</footer>
+</body>
+</html>

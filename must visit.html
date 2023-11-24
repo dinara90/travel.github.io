@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Добавление CDN для работы с bootstrap, favicon, font awesome а также чтобы добавить css и javascript-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<title>DINARA TRAVEL</title>
+	<link rel="stylesheet" type="text/css" href="must%20visit.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/animation.js"></script>
+</head>
+<body>
+<!-- верхнее меню для перехода между страницами-->
+<nav class="menu-area">
+	<ul>
+		<li id="li1"><a title="home" href="#"><span class="side-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></span></a></li>
+		<li><a title="Dinara travel" href="index.html"><img id="img1" src="images/logo.png"></i></a></li>
+		<li><a title="hot tours" href="hot%20tours.html">HOT TOURS</a></li>
+		<li><a title="log in" href="log%20in.html">LOG IN<img src="images/person.png"></a></li>
+	</ul>
+</nav>
+<!-- боковое меню для перехода между страницами с анимацией JS из animation.js файла-->
+<div id="Sidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="must%20visit.html">You must visit</a>
+	<a title="tickets" href="tickets.html">Tickets</a>
+	<a href="contact us.html">Contact Us</a>
+</div>
+
+<center><header>
+  <h1>TOP 10 PLACES YOU MUST VISIT</h1>
+</header></center>
+<!-- карусель с фотографиями boostrap-->
+<div class="container">
+  <div id="Carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#Carousel" data-slide-to="1" class="active"></li>
+      <li data-target="#Carousel" data-slide-to="2"></li>
+      <li data-target="#Carousel" data-slide-to="3"></li>
+      <li data-target="#Carousel" data-slide-to="4"></li>
+      <li data-target="#Carousel" data-slide-to="5"></li>
+      <li data-target="#Carousel" data-slide-to="6"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/burj_khalifa.png" >
+        <div class="carousel-caption">
+          <h3>Burj Khalifa</h3>
+          <p>Dubai, UAE</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/maldives.png" >
+        <div class="carousel-caption">
+          <h3>Maldive islands</h3>
+          <p>Maldives, South Asia</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/iguazu_waterfalls.png" >
+        <div class="carousel-caption">
+          <h3>Iguazu Waterfalls</h3>
+          <p>South America</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/thailand_islands.png" >
+        <div class="carousel-caption">
+          <h3>Thailand Islands</h3>
+          <p>Thailand, South-Eastern Aisa</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/eiffel_tower.png" >
+        <div class="carousel-caption">
+          <h3>Eiffel tower</h3>
+          <p>Paris, France</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/great_chinese_wall.png" >
+        <div class="carousel-caption">
+          <h3>The Great Chinese Wall</h3>
+          <p>China, Eastern Asia</p>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#Carousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#Carousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+
+<div class="div-blocks">
+<!-- блоки с информацией о турах, использовался grid -->
+<div class="div-list">
+<div class="div-img">
+  <img src="images/burj_khalifa.png">
+ <div class="div-text">
+ <h1>Burj Kalifa</h1>
+ <p>The architectural height of Burj Khalifa is 828 meters or 2717 feet, this is measured to the top of the spire, as its spire is considered an architectural element of the tower.
+Before 2010, Burj Khalifa's height has long been kept as a secret in order to prevent it from being surpassed by potential competitors. Finally the owner Emaar claimed the standard height of Burj Khalifa to be 828 meters, with a total height of 829.8 meters to its tip (there's a 1.7 meter small needle atop the top of spire at 828 meters), making it the tallest building in the world in any categories. As of 2019, Burj Khalifa has been holding the crown of World's Tallest Building for 10 years.</p>
+</div>
+</div>
+
+<div class="div-img">
+  <img src="images/maldives.png">
+ <div class="div-text">
+ <h1>Maldives</h1>
+ <p>The Maldives are the stuff dreams are made of - as in dream vacations inspired by those impossibly perfect pictures you've seen, or those pesky fantasies about quitting your day job to live on an exotic island for the rest of your life. You know, the places that can't possibly live up to your expectations of beauty and wonder. Well, we found out that the Maldives actually does live up to every single expectation. It looks exactly like those stock images floating across your screen: bright sun, transparent blue lagoons, house reefs teeming with fish, low waters with baby reef sharks and rays, and white sand beaches that stretch out into nothing but miles and miles of turquoise waters and blue skies.</p>
+</div>
+</div>
+
+<div class="div-img">
+  <img src="images/iguazu_waterfalls.png">
+ <div class="div-text">
+ <h1>Iguazu Waterfalls</h1>
+ <p>There is a legend that explains how the falls were created. A god was to marry Naipi, a beautiful woman. This woman canoed away with her lover, angering the god. The god was enraged and sliced the river, which not only created the falls but condemned the two lovers to fall for eternity.
+ The falls are 1.7 miles long, divided by islands along its edge. These falls range from 197 to 269 feet high. The average height of most of the falls is 210 feet.
+The actual number of waterfalls fluctuates depending on the water level and how much water is flowing. The number ranges from 150 to 300 falls at any given time.
+Three cities in three countries, Brazil, Argentina and Paraguay, have access to Iguazu River.</p>
+</div>
+</div>
+
+<div class="div-img">
+  <img src="images/thailand_islands.png">
+ <div class="div-text">
+ <h1>Thailand Islands</h1>
+ <p>With hundreds of islands and islets scattered along its coastlines and several more in rivers and lakes around the nation, Thailand certainly isn’t lacking when it comes to gorgeous islands. Many people have already heard of, and maybe even visited, larger islands, like Phuket and Koh Samui. But how about trying somewhere different on your next vacation to the Land of Smiles? Here are some of the most stunning Thai islands to add to your Thailand bucket list.Thailand is home to an astonishing array of islands offering all manner of diving, swimming and sunbathing opportunities all year round.</p>
+</div>
+</div>
+
+<div class="div-img">
+  <img src="images/eiffel_tower.png">
+ <div class="div-text">
+ <h1>Eiffel Tower</h1>
+ <p>Located on the Champ de Mars in Paris, France, the Eiffel Tower is one of the most well known structures in the world.
+The Eiffel Tower was originally built as the entrance arch for the World's Fair in 1889.
+It is named after Gustave Eiffel, whose company was in charge of the project.
+The Eiffel Tower is 320 metres (1050 feet) in height and was the tallest man made structure in the world for 41 years before being surpassed by the Chrysler Building in New York.
+The Eiffel Tower is made of iron and weighs around 10000 tonnes.
+Around 50 tonnes of paint are added to the Eiffel Tower every 7 years to protect it from rust.</p>
+</div>
+</div>
+
+<div class="div-img">
+  <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/01/31124623/Great-Wall-Of-China.jpg?tr=w-1200,h-900">
+ <div class="div-text">
+ <h1>Great Chinese Wall</h1>
+ <p>With a total length of 21,196.18 km (13,170.70 miles), equal to half the length of the Equator, the Great Wall of China is the longest feat of human engineering.In the main today’s wall comprises relics from the Ming Dynasty (1368 - 1644), measuring 8,851.8 km (5,500 miles).The average height of the walls is  6 to 7 meters (20 to 23 feet), and the highest is 14 meters (46 feet ).The altitudes of the walls vary – the highest point is the Huanglouyuan in the northwest suburb of Beijing, with an elevation of 1,439.3 meters (4,722 feet), while the lowest point is at Laolongtou in Hebei, just above the sea level.The average width is 6.5 meters (21.3 feet).</p>
+</div>
+</div>
+
+<div class="div-img">
+  <img src="https://s1.1zoom.ru/b5150/718/India_Temples_Fountains_Taj_Mahal_550854_1920x1080.jpg">
+ <div class="div-text">
+ <h1>Taj Mahal</h1>
+ <p>The Taj Mahal was built by a whopping 22,000 laborers, painters, stonecutters, embroidery artists.Legend has it that Emperor Shah Jahan intended to build another Taj Mahal in black marble across the river but a war with his sons interrupted these plans.The changing moods of the Emperors wife are well captured by the changing hues of the Mausoleum at different times of the day. It takes a pinkish hue in the morning, milky white in the evening and golden at night when illuminated by moonlight.</p>
+</div>
+</div>
+<div class="div-img">
+  <img src="https://www.deluxehomes.ae/wp-content/uploads/2017/03/palm-jumeirah.jpg">
+ <div class="div-text">
+ <h1>Palm Jumairah</h1>
+ <p>Instead of concrete slabs, the foundations of The Palm were created from 7 million tons of rock blasted from the nearby Hajar Mountains. And while the desert emirate is surrounded by sand, 120 million cubic metres of the stuff were dredged from the bottom of the sea to form the island. In fact, the amount of rock and sand used in Palm Jumeirah’s construction could form a 2m-wide wall that would circle the globe three times.
+</p>
+</div>
+</div>
+<div class="div-img">
+  <img src="images/pyramids.png">
+ <div class="div-text">
+ <h1>Giza Pyramids</h1>
+ <p> While the three pyramids of the Giza plateau – known as Cheops (The Great Pyramid), Chephren and Mycerinus are the most famous in Egypt, more than 130 other pyramids have been discovered scattered around the area of Ancient Egypt.The Pyramids of Giza are the oldest and sole remaining intact wonder of the Seven Wonders of the Ancient World.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- футер с информацией и социальными сетями-->
+<footer>
+  <div class="footer-text">
+      <ul>
+          <li><img src="images/logo.png" alt="logo"></li>
+          <li>City: Astana, Kazakhstan</li>
+          <li>Our Address: Kunayeva 33</li>
+          <li>Email address: dinara.travel@mail.ru</li>
+          <li>Phone number: +7(777)0001234</li>
+      </ul>
+  </div>
+
+  <!-- использовались font awesome для фото социальных сетей-->
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-pinterest"></a>
+  <a href="#" class="fa fa-yahoo"></a>
+  <a href="#" class="fa fa-reddit"></a>
+  <a href="#" class="fa fa-rss"></a>
+</footer>
+</body>
+</html>

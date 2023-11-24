@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Добавление CDN для работы с bootstrap, favicon, font awesome а также чтобы добавить css и javascript-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Dinara Travel</title>
+	<link rel="stylesheet" type="text/css" href="tours.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/animation.js"></script>
+</head>
+<body>
+<!-- верхнее меню для перехода между страницами-->
+<nav class="menu-area">
+	<ul>
+		<li id="li1"><a title="home" href="#"><span class="side-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></span></a></li>
+		<li><a title="Dinara travel" href="index.html"><img id="img1" src="images/logo.png"></i></a></li>
+		<li><a title="hot tours" href="hot%20tours.html">HOT TOURS</a></li>
+		<li><a title="log in" href="log%20in.html">LOG IN<img src="images/person.png"></a></li>
+	</ul>
+</nav>
+<!-- боковое меню для перехода между страницами с анимацией JS-->
+<div id="Sidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="must%20visit.html">You must visit</a>
+	<a title="tickets" href="tickets.html">Tickets</a>
+	<a href="contact us.html">Contact Us</a>
+</div>
+
+<!-- основной блок со всему турами, использовался grid -->
+<div class="wrapper">
+<div class="tours-list">
+	<div class="block">
+		<div class="div-img"><img src="https://i0.wp.com/hotway.com.ua/wp-content/uploads/2018/06/Haydarpasha-Palace-Hotel-%D1%84%D0%BE%D1%82%D0%BE-%D0%BE%D1%82%D0%B5%D0%BB%D1%8F.jpg?resize=1920%2C1080">
+			<h3>120$ per night</h3></div>
+		<div class="div-text"><p class="txt">RIXOS PREMIUM, BELEK</p>
+		<p>Offering charming views of Mediterranean sea and pistachio tree forest, all rooms of Rixos Premium Belek feature an elegant décor with modern furnishings. Each room is equipped with a flat-screen satellite TV. All rooms at the Rixos Premium Belek have private balconies and some also have a terrace offering pool and nature views.</p>
+		<button>ORDER</button></div>
+	</div>
+
+	<div class="block">
+		<div class="div-img"><img src="https://files.tpg.ua/files/hotels/000062853/Royal_Regency_Club_00.jpg">
+			<h3>95$ per night</h3></div>
+		<div class="div-text"><p class="txt">ROYAL MODERNA, EGYPT</p>
+		<p>Albatros Resort has an outdoor pool area overlooking the golden beaches of Nabq Bay. It has spacious guest rooms with private, furnished balconies. Free private parking is available.
+		Guests at the Royal Albatros Moderna can stay in bright, contemporary rooms decorated with a sitting area and large windows</p>
+		   <button>ORDER</button></div>
+	</div>
+<!-- bootstrap cards -->
+	<div class="block">
+		<div class="div-img"><img src="https://images.wallpaperscraft.ru/image/single/maldivy_tropiki_bungalo_90625_1920x1080.jpg">
+			<h3>300$ per night</h3></div>
+		<div class="div-text"><p class="txt">BUNGALOWS, MALDIVES</p>
+		<p>Perched over the Indian Ocean, Gili Lankanfushi offers closeness to sun and sea with its luxurious accommodations. Aside from free Wi-Fi, it also has an ocean-view outdoor pool and relaxing spa.
+        Located on the private island of Lankanfushi in Male Atoll, Gili Lankanfushi Maldives</p>
+        <button>ORDER</button></div>
+	</div>
+
+	<div class="block">
+		<div class="div-img"><img src="https://cdn.wallpapersafari.com/99/28/ZTwsov.jpg">
+			<h3>40$, 3 hours</h3></div>
+		<div class="div-text"><p class="txt">GREAT CHINESE WALL</p>
+		<p>The Great Wall of China is an ancient series of walls and fortifications, totaling more than 13,000 miles in length, located in northern China. Perhaps the most recognizable symbol of China and its long and vivid history, the Great Wall was originally conceived by Emperor Qin Shi Huang in the third century B.C.</p>
+		<button>ORDER</button></div>
+	</div>
+
+	<div class="block">
+		<div class="div-img"><img src="https://cdn.motor1.com/images/mgl/PRV0W/s1/ferrari-world-abu-dhabi-uae.jpg">
+			<h3>70$, for a day</h3></div>
+		<div class="div-text"><p class="txt">FERRARI WORLD, UAE</p>
+		<p>Ferrari World Abu Dhabi is a mostly indoors amusement park on Yas Island in Abu Dhabi, United Arab Emirates. It is the first Ferrari-branded theme park and has the record for the largest space frame structure ever built. Formula Rossa, the world's fastest roller coaster, is also located here.</p><br>
+		<button>ORDER</button></div>
+	</div>
+
+	<div class="block">
+		<div class="div-img"><img src="https://aydanatour.kz/upload/iblock/e7a/e7ad79e54fdfdbe30f3cfedd3b51efe0.jpeg">
+		<h3>60$, for a day</h3></div>
+		<div class="div-text"><p class="txt">TROY ACQUAPARK,TURKEY</p>
+		<p>Troya water Park, opened in 2005, occupies a fairly large territory-12 thousand square meters.M. A is considered an institution that can provide the largest selection of attractions in Belek. However, its popularity is due not only to the variety of water activities, but also to the design.</p><br>
+		<button>ORDER</button></div>
+	</div>
+</div>
+</div>
+<!-- футер с информацией и социальными сетями-->
+<footer id="footer-tours">
+    <div class="footer-text">
+        <ul>
+            <li><img src="images/logo.png" alt="logo"></li>
+            <li>City: Astana, Kazakhstan</li>
+            <li>Our Address: Kunayeva 33</li>
+            <li>Email address: dinara.travel@mail.ru</li>
+            <li>Phone number: +7(777)0001234</li>
+        </ul>
+    </div>
+
+    <!-- использовались font awesome для фото социальных сетей-->
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <a href="#" class="fa fa-yahoo"></a>
+    <a href="#" class="fa fa-reddit"></a>
+    <a href="#" class="fa fa-rss"></a>
+</footer>
+</body>
+</html>

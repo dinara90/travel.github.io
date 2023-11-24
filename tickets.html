@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Добавление CDN для работы с bootstrap, favicon, font awesome а также чтобы добавить css и javascript-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<title>DINARA TRAVEL</title>
+	<link rel="stylesheet" type="text/css" href="tickets.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/animation.js"></script>
+</head>
+<body>
+<!-- верхнее меню для перехода между страницами-->
+<nav class="menu-area">
+	<ul>
+		<li id="li1"><a title="home" href="#"><span class="side-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></span></a></li>
+		<li><a title="Dinara travel" href="index.html"><img id="img1" src="images/logo.png"></i></a></li>
+		<li><a title="hot tours" href="hot%20tours.html">HOT TOURS</a></li>
+		<li><a title="log in" href="log%20in.html">LOG IN<img src="images/person.png"></a></li>
+	</ul>
+</nav>
+<!-- боковое меню для перехода между страницами с анимацией JS-->
+<div id="Sidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="must%20visit.html">You must visit</a>
+	<a title="tickets" href="tickets.html">Tickets</a>
+	<a href="contact us.html">Contact Us</a>
+</div>
+
+  <header>
+    <h2>Please enter the data</h2>
+  </header>
+  <!-- форма для подбора билетов-->
+ <form> <div class="search">
+  <div>
+    <select class="from">
+      <option>From :</option>
+      <option>Astana</option>
+      <option>Almaty</option>
+      <option>Atyrau</option>
+      <option>Aktau</option>
+      <optiion>Atyrau</optiion>
+      <option>Aktobe</option>
+      <option>Karaganda</option>
+      <option>Kostanay</option>
+      <option>Pavlodar</option>
+      <option>Petropavlovsk</option>
+      <option>Uralsk</option>
+      <option>Ust-Kamenogorsk</option>
+      <option>Shymkent</option>
+  </select>
+  </div>
+  <div>
+    <select class="form">
+      <option>To :</option>
+      <option>Moscow, RU</option>
+      <option>St.Petersburg, RU</option>
+      <option>New York, USA</option>
+      <option>Los Angeles, USA</option>
+      <option>Chicago, USA</option>
+      <option>Tashkent, UZB</option>
+      <option>Beijing, CHI</option>
+      <option>Altaliya, TUR</option>
+      <option>Istambul, TUR</option>
+      <option>Dubai, UAE</option>
+      <option>Abu Dhabi, UAE</option>
+      <option>Bangkok, THI</option>
+      <option>Kuala Lumpur, MAL</option>
+      <option>Canberra, AUS</option>
+      <option>Berlin, GER</option>
+      <option>Paris, FRA</option>
+      <option>Baku, AZJ</option>
+      <option>Minsk, BRU</option>
+      <option>Brussels, BEL</option>
+      <option>Ottawa, CAN</option>
+      <option>Zagreb, CRO</option>
+      <option>Cairo, EGY</option>
+      <option>Tbilisi, JJA</option>
+      <option>Budapest, HUN</option>
+      <option>London, UK</option>
+      <option>Oslo, NOR</option>
+      <option>Warsaw, POL</option>
+      <option>Madrid, SPN</option>
+    </select>
+  </div>
+  <div class="date">
+    <input type="date" type="date" value="2023-11-19">
+  </div>
+  <div>
+      <select class="form">
+        <option>One side</option>
+        <option>Return</option>
+      </select>
+  </div>
+  <div>
+    <button>FIND TICKETS</button>
+  </div>
+  </div></form>
+    <center><h2>We work only with reliable Air companies</h2></center>
+<div class="container">
+  <div id="Carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#Carousel" data-slide-to="1" class="active"></li>
+      <li data-target="#Carousel" data-slide-to="2"></li>
+      <li data-target="#Carousel" data-slide-to="3"></li>
+      <li data-target="#Carousel" data-slide-to="4"></li>
+      <li data-target="#Carousel" data-slide-to="5"></li>
+      <li data-target="#Carousel" data-slide-to="6"></li>
+    </ol>
+
+    <!-- boostrap карусель из фотографий-->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a7/Air_Astana_logo.svg/1280px-Air_Astana_logo.svg.png">
+      </div>
+      <div class="item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Fly_Dubai_logo_2010_03.svg/1200px-Fly_Dubai_logo_2010_03.svg.png" >
+      </div>
+      <div class="item">
+        <img src="https://upload.wikimedia.org/wikipedia/ru/c/c2/Qatar_Airways_Logo.png" >
+      </div>
+      <div class="item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lufthansa_Logo_2018.svg/3326px-Lufthansa_Logo_2018.svg.png" >
+      </div>
+    </div>
+    <a class="left carousel-control" href="#Carousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#Carousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+<!-- футер с информацией и социальными сетями-->
+<footer>
+  <div class="footer-text">
+      <ul>
+          <li><img src="images/logo.png" alt="logo"></li>
+          <li>City: Astana, Kazakhstan</li>
+          <li>Our Address: Kunayeva 33</li>
+          <li>Email address: dinara.travel@mail.ru</li>
+          <li>Phone number: +7(777)0001234</li>
+      </ul>
+  </div>
+
+  <!-- использовались font awesome для фото социальных сетей-->
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-pinterest"></a>
+  <a href="#" class="fa fa-yahoo"></a>
+  <a href="#" class="fa fa-reddit"></a>
+  <a href="#" class="fa fa-rss"></a>
+</footer>
+</body>
+</html>
